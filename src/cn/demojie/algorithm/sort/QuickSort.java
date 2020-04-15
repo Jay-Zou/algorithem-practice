@@ -9,11 +9,19 @@ public class QuickSort {
 
     public static void main(String[] args) {
         QuickSort quickSort = new QuickSort();
+        // [13, 27, 38, 49, 49, 65, 76, 97]
         Integer[] array = {49, 38, 65, 97, 76, 13, 27, 49};
         Utils.printArr(array);
 
         quickSort.quickSort(array);
         Utils.printArr(array);
+        // -----------------------
+        // [11, 13, 27, 38, 49, 49, 65, 76, 97]
+        Integer[] array2 = {11, 49, 38, 65, 97, 76, 13, 27, 49};
+        Utils.printArr(array2);
+
+        quickSort.quickSort(array2);
+        Utils.printArr(array2);
     }
 
     /**
@@ -33,7 +41,6 @@ public class QuickSort {
             return;
         }
         int index = partition(array, start, end);
-        Utils.printArr(array);
         quickSort(array, start, index - 1);
         quickSort(array, index + 1, end);
     }

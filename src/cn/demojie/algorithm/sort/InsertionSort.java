@@ -14,6 +14,13 @@ public class InsertionSort {
         insertionSort.insertionSort(array);
         // [13, 27, 38, 49, 49, 65, 76, 97]
         Utils.printArr(array);
+        // -------------------------
+        Integer[] array2 = {11, 49, 38, 65, 97, 76, 13, 27, 49};
+        Utils.printArr(array2);
+
+        insertionSort.insertionSort(array2);
+        // [11, 13, 27, 38, 49, 49, 65, 76, 97]
+        Utils.printArr(array2);
     }
 
     /**
